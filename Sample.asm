@@ -18,12 +18,17 @@ INCLUDE Irvine
 	var7 DD 10101	;Binary
 	var8 BW 'A'		;Single Character ALways in BYTE
 	var9 BYTE "HEllo World" ;String
+	msg BYTE "HEllo World",0 ;0 --> null termintaor
 	
 
 .code
 main PROC
 	;Similar To MAIN FUNCTION(C++)
+	call DumpRegs ;Prints the value for all registers
+	mov edx, OFFSET msg		;offset moves address of msg to edx / Only have to store in edx
+	call WriteString
 
+	
 
 exit
 main ENDP

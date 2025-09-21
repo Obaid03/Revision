@@ -1,0 +1,38 @@
+=== DATA STRUCTURES MID-EXAM ALGORITHM SUMMARY ===
+
+LINKED LISTS:
+1. Singly Linked List:
+   - Node: data + next pointer
+   - Operations: insert (beginning/end/position), delete, search, display
+   - Time: Insert at beginning O(1), Insert at end O(n), Search O(n)
+
+2. Doubly Linked List:
+   - Node: data + next + prev pointers
+   - Operations: insert (beginning/end/position), delete, search, display forward/backward
+   - Time: Insert at beginning/end O(1) with tail pointer, Search O(n)
+
+3. Circular Linked List:
+   - Last node points to first node (no NULL)
+   - Operations: insert (beginning/end), delete, search, display
+   - Time: Insert at beginning/end O(1), Search O(n)
+
+SORTING ALGORITHMS:
+1. Bubble Sort: O(n²) - Compare adjacent, swap if wrong order
+2. Selection Sort: O(n²) - Find minimum, place at beginning
+3. Insertion Sort: O(n²) worst, O(n) best - Insert element in sorted portion
+4. Merge Sort: O(n log n) - Divide and conquer, stable
+5. Quick Sort: O(n log n) average, O(n²) worst - Partition around pivot
+
+SEARCHING ALGORITHMS:
+1. Linear Search: O(n) - Check each element sequentially
+2. Binary Search: O(log n) - Divide sorted array in half
+3. Interpolation Search: O(log log n) - Estimate position using formula
+4. Jump Search: O(√n) - Jump by √n steps, then linear search
+
+KEY EXAM TIPS:
+- Always check for empty lists/arrays
+- Handle edge cases (single element, not found)
+- Know time complexities by heart
+- Practice tracing through algorithms step by step
+- Remember: Binary search needs sorted array
+- Understand when to use each algorithm

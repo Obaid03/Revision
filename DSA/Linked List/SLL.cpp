@@ -140,6 +140,37 @@ public:
         cout << "Deleted " << value << " from list" << endl;
         delete nodeToDelete;
     }
+ // Delete at position
+    void deleteAtPosition(int position) {
+        if (head == nullptr) {
+            cout << "List is empty" << endl;
+            return;
+        }
+        
+        if (position == 0) {
+            Node* temp = head;
+            head = head->next;
+            delete temp;
+            cout << "Deleted node at position " << position << endl;
+            return;
+        }
+        
+        Node* temp = head;
+        for (int i = 0; i < position - 1 && temp != nullptr; i++) {
+            temp = temp->next;
+        }
+        
+        if (temp == nullptr || temp->next == nullptr) {
+            cout << "Position out of bounds" << endl;
+            return;
+        }
+        
+        Node* nodeToDelete = temp->next;
+        temp->next = temp->next->next;
+        delete nodeToDelete;
+        cout << "Deleted node at position " << position << endl;
+    }
+
     
     // 7. SEARCH - O(n)
     bool search(int value) {

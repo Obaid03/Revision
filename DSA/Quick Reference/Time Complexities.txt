@@ -1,0 +1,30 @@
+=== TIME COMPLEXITY CHEAT SHEET ===
+
+LINKED LISTS:
+• Insert at beginning: O(1)
+• Insert at end: O(n) for singly, O(1) for doubly
+• Insert at position: O(n)
+• Delete from beginning: O(1)
+• Delete from end: O(n) for singly, O(1) for doubly
+• Search: O(n)
+• Display: O(n)
+
+SORTING ALGORITHMS:
+• Bubble Sort: O(n²) average/worst, O(n) best
+• Selection Sort: O(n²) all cases
+• Insertion Sort: O(n²) average/worst, O(n) best
+• Merge Sort: O(n log n) all cases
+• Quick Sort: O(n log n) average, O(n²) worst
+
+SEARCHING ALGORITHMS:
+• Linear Search: O(n)
+• Binary Search: O(log n) - requires sorted array
+• Interpolation Search: O(log log n) - uniform distribution
+• Jump Search: O(√n) - requires sorted array
+
+KEY EXAM TIPS:
+1. Always check if list/array is empty
+2. Handle edge cases (single element, position bounds)
+3. Remember to update pointers correctly in linked lists
+4. Binary search only works on sorted arrays
+5. Know when to use each algorithm based on data characteristics
